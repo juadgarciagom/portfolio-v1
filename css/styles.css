@@ -2426,6 +2426,9 @@ textarea.form-control {
     margin-bottom: 0;
   }
 }
+.float-left, .float-right {
+  opacity: 0.6;
+}
 
 .btn {
   display: inline-block;
@@ -2471,13 +2474,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: var(--cyan);
+  border-color: var(--cyan);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color:#138091 ;
+  border-color: #17a2b8;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
@@ -6095,7 +6098,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: var(--cyan) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9797,7 +9800,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #f4623a !important;
+  color: #1dbfd8 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10007,7 +10010,7 @@ html {
 hr.divider {
   max-width: 5rem;
   border-width: 0.2rem;
-  border-color: var(--cyan);
+  border-color: #1dbfd8;
 }
 
 hr.light {
@@ -10096,7 +10099,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(71, 66, 92, 0.8) 0%, rgba(68, 66, 92, 0.8) 100%), url("../assets/img/5.jpg");
+  background: linear-gradient(to bottom, rgba(66, 84, 92, 0.7) 0%, rgba(66, 82, 92, 0.9) 100%), url("../assets/img/5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10125,6 +10128,15 @@ header.masthead h1 {
   }
 }
 
+.background-equipment {
+  background: linear-gradient(to bottom, rgba(88, 88, 88, 0.5) 0%, rgba(194, 193, 193, 0.9) 100%), url("../assets/img/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
@@ -10144,7 +10156,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(49, 194, 204, 0.8);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -10155,7 +10167,7 @@ header.masthead h1 {
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -10163,4 +10175,8 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+#contact {
+  background-color: rgb(216, 216, 216);
 }
